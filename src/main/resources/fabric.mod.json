@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "moreisbetter",
+	"version": "${version}",
+	"name": "MoreIsBetter",
+	"description": "This mod add more stuff",
+	"authors": [
+		"CursedRicky"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/moreisbetter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cursedricky.moreisbetter.MoreIsBetter"
+		],
+		"client": [
+			"com.cursedricky.moreisbetter.MoreIsBetterClient"
+		],
+		"fabric-datagen": [
+			"com.cursedricky.moreisbetter.MoreIsBetterDataGenerator"
+		]
+	},
+	"mixins": [
+		"moreisbetter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.5",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
