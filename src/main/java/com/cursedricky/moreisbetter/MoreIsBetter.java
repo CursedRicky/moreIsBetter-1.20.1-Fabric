@@ -1,5 +1,6 @@
 package com.cursedricky.moreisbetter;
 
+import com.cursedricky.moreisbetter.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class MoreIsBetter implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerMoreItems();
+
 	}
 }
